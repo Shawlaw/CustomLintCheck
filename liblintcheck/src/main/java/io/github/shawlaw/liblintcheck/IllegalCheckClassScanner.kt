@@ -115,7 +115,7 @@ class IllegalCheckClassScanner: Detector(), ClassScanner, SourceCodeScanner {
         return problemFieldSet.contains(normalizeFieldPath(fieldInsnNode))
     }
 
-    private fun normalizeFieldPath(methodInsnNode: FieldInsnNode): String {
-        return "${methodInsnNode.owner.replace("/", ".")}.${methodInsnNode.name}"
+    private fun normalizeFieldPath(fieldInsnNode: FieldInsnNode): String {
+        return "${fieldInsnNode.owner.replace("/", ".")}.${fieldInsnNode.name}"
     }
 }
