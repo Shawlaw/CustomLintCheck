@@ -1,0 +1,4 @@
+rootProject.name = "lintcheck"
+include ':app'
+include ':liblintcheck'
+include ':publishlint'
