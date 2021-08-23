@@ -22,7 +22,7 @@ The check result will be listed in html report under name **CustomIllegalCheck**
 
 Firstly ensure your project's Android gradle build tool version is at least **4.1.3** and kotlin version is at least **1.5.21**.
 
-If not, try upgrade your project or build your own lint-check jar/aar from this project after change the versions in **gradle.properties**. Read more in next section.
+If not, try upgrade your project or build your own lint-check jar/aar from this project after change the versions in **gradle.properties**. Read more in [next section](https://github.com/Shawlaw/CustomLintCheck#build-your-own-lint-check-aarjar).
 
 Then download aar/jar from [release page](https://github.com/Shawlaw/CustomLintCheck/releases) and put it in your project.
 
@@ -102,7 +102,7 @@ Open it in the browser then we will see the checking result.
 
 1. Clone this project
 
-2. Change versions in **gradle.properties** on your demand, may also need to adjust code of *io.github.shawlaw.liblintcheck.IllegalCheckClassScanner* and *io.github.shawlaw.liblintcheck.IllegalCheckRegistry*
+2. Change versions in **gradle.properties** on your demand(**LintApiVersion = AndroidGradleBuildToolVersion + 23.0.0**), may also need to adjust code of *io.github.shawlaw.liblintcheck.IllegalCheckClassScanner* and *io.github.shawlaw.liblintcheck.IllegalCheckRegistry*
 
    ![](./doc_assets/gradle_properties_versions.png)
 
